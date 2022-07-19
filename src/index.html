@@ -4,10 +4,26 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title> 
+  <link rel="shortcut icon" href="./modules/images/nimplayLogo.jpg" />
+  <title>Leaderboard API</title> 
 </head>
 <body>
-  <h1>hello world I'm Nimplay and you?</h1> 
-  <img src="./images/nimplayLogo.jpg" alt="hola"> 
+  <h1 class="title">Leaderboard</h1> 
+  <div class="container">
+    <div class="first-div">
+      <div class="score-header">
+        <h2 class="score-title">Recent Score</h2>
+        <button class="refresh-buttom">Refresh</button>
+      </div>
+      <ul class="score-table">
+      </ul>
+    </div>
+    <form class="form">
+      <h2 class="form-title">Add Your Score</h2>
+      <input type="text" placeholder="Your Name" class="name-box">
+      <input type="text" placeholder="Your Score" class="score-box">
+      <button type="button" class="submit-button">Submit</button>
+    </form>
+  </div> 
 </body>
 </html>
