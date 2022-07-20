@@ -45,6 +45,14 @@ body {
   border-radius: 5px;
 }
 
+.item:nth-child(even) {
+  background-color: lightgrey;
+}
+
+.item:nth-child(odd) {
+  background-color: white;
+}
+
 .form {
   display: flex;
   flex-direction: column;
