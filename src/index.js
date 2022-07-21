@@ -1,9 +1,7 @@
 // import _ from 'lodash';
 import './style.css';
-import displayList from './modules/leaderboard.js';
-import newData from './modules/form.js';
-import loadData from './modules/load.js';
+import postScore from './modules/post.js';
+import refresh from './modules/refresh.js';
 
-loadData();
-displayList();
-newData();
+document.querySelector('.form').addEventListener('submit', postScore);
+document.querySelector('.refresh-buttom').addEventListener('click', refresh);
