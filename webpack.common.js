@@ -1,9 +1,10 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const path = require("path");
-module.exports = { 
-  entry:"./src/index.js", 
-  plugins:[new HtmlWebpackPlugin({
-    template: "./src/index.html",  
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  plugins: [new HtmlWebpackPlugin({
+    template: './src/index.html',
   })],
   module: {
     rules: [
@@ -13,21 +14,21 @@ module.exports = {
       },
       {
         test: /\.html$/i,
-        loader: "html-loader",        
+        loader: 'html-loader',
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
-        type: "asset/resource",
+        type: 'asset/resource',
         use: [
           {
             loader: 'file-loader',
             options: {
               name: '[path][name].[ext]',
-              outputPath: "imgs"
+              outputPath: 'imgs',
             },
           },
         ],
       },
-    ],        
+    ],
   },
 };
