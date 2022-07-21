@@ -5,7 +5,7 @@ const refresh = async () => {
   listUl.innerHTML = '';
   const results = await fetch('https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/I5XXuZZnjyV0RpIzFybj/scores/');
   const data = await results.json();
-  let arr = data.result;
+  const arr = data.result;
   // sorting arr
   arr.sort(((a, b) => b.score - a.score));
 
