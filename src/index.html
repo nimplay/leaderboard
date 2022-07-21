@@ -5,23 +5,27 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./modules/images/nimplayLogo.jpg" />
-  <title>Leaderboard API</title> 
+  <title>Leaderboard API</title>   
 </head>
 <body>
   <h1 class="title">Leaderboard</h1> 
+  <img src="./modules/images/icons8-pixel-star-96.png" alt="">
   <div class="container">
     <div class="first-div">
       <div class="score-header">
         <h2 class="score-title">Recent Score</h2>
         <button class="refresh-buttom">Refresh</button>
       </div>
-      <ul class="score-table">
+      <div class="box-title">
+        <p class="box-header">Name</p> <p class="box-header">Score</p>
+      </div>
+      <ul class="score-table">        
       </ul>
     </div>
     <form class="form">
       <h2 class="form-title">Add Your Score</h2>
-      <input type="text" placeholder="Your Name" id="name" class="name-box">
-      <input type="text" placeholder="Your Score" id="score" class="score-box">
+      <input type="text" placeholder="Your Name" id="name" class="name-box" maxlength="20" required>
+      <input type="number" placeholder="Your Score"  id="score" class="score-box" required>
       <button type="submit" class="submit-button" id="data-submit">Submit</button>
     </form>
   </div> 
