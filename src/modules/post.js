@@ -1,8 +1,11 @@
 const postScore = async (e) => {
   e.preventDefault();
   const user = document.getElementById('name').value;
-  const score = document.getElementById('score').value;
-  const gameUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/bmBsWnBXvVGZ5GV7fqzY/scores/';
+  let score = document.getElementById('score').value;
+  if(score.length > 10){
+    score = '+9999999999'
+  }
+  const gameUrl = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/I5XXuZZnjyV0RpIzFybj/scores/';
   const result = await fetch(`${gameUrl}`, {
     method: 'POST',
     headers: {
