@@ -12,7 +12,7 @@ This is a Leaderboard project in microverse course only for educational purposes
 - WebPack
 ## Live Demo
 
-To run this project in your local environment, you can use this [link](https://github.com/nimplay/leaderboard/dist/)
+To run this project in your local environment, you can use this [link](https://nimplay.github.io/leaderboard/dist/)
 
 ## Getting Started
 
